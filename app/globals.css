@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -12,15 +7,49 @@
   --font-mono: var(--font-geist-mono);
 }
 
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-alt: #f1f5f9;
+  --border-color: #e2e8f0;
+  --text-muted: #64748b;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0b1120;
+    --foreground: #e2e8f0;
+    --surface: #111827;
+    --surface-alt: #1e293b;
+    --border-color: #334155;
+    --text-muted: #94a3b8;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
+
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-hover { transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.card-hover:active { transform: scale(0.98); }
+
+.prose-custom h1 { font-size: 1.3rem; font-weight: 700; margin: 0.8rem 0 0.4rem; }
+.prose-custom h2 { font-size: 1.1rem; font-weight: 600; margin: 0.6rem 0 0.3rem; }
+.prose-custom p { margin: 0.4rem 0; line-height: 1.7; font-size: 0.9rem; }
+.prose-custom ul, .prose-custom ol { margin: 0.4rem 0; padding-left: 1.2rem; }
+.prose-custom code { background: var(--surface-alt); padding: 0.1rem 0.3rem; border-radius: 0.2rem; font-size: 0.85em; }
+.prose-custom pre { background: #1e293b; color: #e2e8f0; padding: 0.8rem; border-radius: 0.5rem; overflow-x: auto; font-size: 0.8rem; }
+.prose-custom pre code { background: none; padding: 0; }
+.prose-custom strong { color: var(--foreground); }

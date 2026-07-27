@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IELTS Tools — 雅思智能备考工具
 
-## Getting Started
+**https://ieltstools.cn**
 
-First, run the development server:
+AI 驱动的雅思学习平台，词汇学习永久免费。接入你自己的 DeepSeek API Key，享受 7 种专业 AI 模式的雅思备考辅助。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 核心功能
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **4200+ 词汇** — 新东方雅思词汇，闪卡间隔重复记忆，按技能分类单词本
+- **7 种 AI 模式** — 雅思问答 · 翻译 · 句式扩写 · 语法讲解 · 作文批改 · 学习规划 · 口语教练
+- **口语陪练** — 语音识别 + AI 考官四维评估
+- **作文批改** — 考官级 Task 1 & 2 评分，逐句纠错，范文对照
+- **学习规划** — 每日时间表 + 任务提炼
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 自带密钥模式
 
-## Learn More
+- 词汇学习永久免费
+- AI 功能需自备 DeepSeek API Key
+- Token 费用由 DeepSeek 官方收取，平台无任何加价
+- 密钥 AES 加密存储在本地浏览器
 
-To learn more about Next.js, take a look at the following resources:
+## 技术栈
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Next.js 16 · TypeScript · Tailwind CSS · DeepSeek V4 · Framer Motion · Nginx · PM2 · Let's Encrypt SSL
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**立即体验：https://ieltstools.cn**
